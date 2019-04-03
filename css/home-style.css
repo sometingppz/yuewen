@@ -1,0 +1,412 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	font-family: trebuchet ms, arial, sans-serif;;
+	background: black;
+	color: #fff;
+}
+ul{
+	list-style-type: none;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+.none{
+	display: none;
+}
+.show{
+	display: block;
+}
+.normal{
+	background: #000000;
+}
+.hover{
+	background: #9B59B6;
+}
+#header,#home{
+	margin: 0 auto;	
+	width: 80%;
+}
+
+#header{
+	display: flex;
+	height: 130px;
+}
+#pictures{
+	display: flex;
+	flex-grow: 3;
+}
+.menu-btn{
+	padding: 15px 20px 15px 0;
+	display: none;
+}
+#menu{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+}
+#tab{
+	display: flex;
+}
+
+#form{
+	display: flex;
+	justify-content: flex-end;
+	border-style: none;		
+}
+#form li{
+	padding: 20px 15px;	
+    text-transform: uppercase;
+	cursor: pointer;	
+}
+
+/*---登录start---*/
+#tri1{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+     border-bottom: 20px solid #9B59B6 ; 
+}
+#tri2{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+     border-bottom: 20px solid #9B59B6 ; 
+}
+#loginForm{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: -220px;
+	background-color: #FFFFFF;
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+}
+#body{
+	border-style: none;
+	color: #6C6C6C;	
+	margin: 20px;
+	height: auto;
+	width: auto;
+}
+#body fieldset{
+	border-style: none;
+	margin-bottom: 10px;
+	height: auto;
+	width: auto;
+}
+#body label{
+	margin-bottom: 20px;
+}
+#email,#password{
+	width: 100%;
+	height: 39px;
+	margin-top: 10px;
+	border: #BBBBBB solid 0.5px;
+}
+.form-btn{
+	display: flex;
+	flex-direction:column ;
+}
+.remeber{
+	text-transform: none;
+	width: 100%;
+	padding-top: 5px;
+	font-size: 16px;
+}
+#checkbox{
+	margin-right: 10px;
+	
+}
+#login{
+	border: #9B59B6 solid 1px;
+	background-color: #9B59B6;
+	padding: 10px 30px;
+	color: #FFFFFF;
+	font-size: 1.1em;
+	border-radius: 5px;
+	margin-top: -5px;
+}
+.body-s{
+    padding: 0;
+    width: auto;
+    height: auto;
+    margin-top: -13px;
+    padding-left: 16px;
+
+}
+.body-a{
+	padding: 0;
+	margin: 0;
+	color: #6C6C6C;
+	text-transform: none;
+} 
+#signupForm{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: -220px;
+	background-color: #FFFFFF;
+	width: 300px;
+	height: 320px;
+	border-radius: 5px;
+}
+#signupbody{
+	border-style: none;
+	color: #6C6C6C;	
+	margin: 20px;
+	height: auto;
+	width: auto;
+}
+#signupbody fieldset{
+	border-style: none;
+	margin-bottom: 10px;
+	height: auto;
+	width: auto;
+}
+#signupbody label{
+	margin-bottom: 20px;
+}
+#signupemail,#signuppassword,#signuppassword1{
+	width: 100%;
+	height: 39px;
+	margin-top: 10px;
+	border: #BBBBBB solid 0.5px;
+}
+.now{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#signup{
+	border: #9B59B6 solid 1px;
+	background-color: #9B59B6;
+	padding: 10px 75px;
+	color: #FFFFFF;
+	border-radius: 2px;
+	cursor: pointer;
+}
+/*---登录end---*/
+
+#home{
+	margin: 60px auto;
+}
+	
+.home-content{
+	display: flex;
+	justify-content: space-between;
+}
+.home-content p{
+	
+}
+.home-content-left{
+	margin-top: 90px;
+	width: 40%;
+}
+.home-content-left h1{
+	text-transform: uppercase;
+	font-size: 2.5em;
+	margin-bottom: 20px;
+}
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-size:1.3em ;
+	
+}
+
+a.sign{
+	border: #9B59B6 solid 1px;
+	border-radius: 15px;
+	padding: 8px 36px;
+}
+a.sign:hover{
+	background: #9B59B6;
+}
+.home-content-right{
+	display: flex;
+	justify-content: center;	
+	width: 50%;
+}
+.home-content-right img{
+	width: 270px;
+	height: 450px;
+	border-top-left-radius: 32px;
+	border-top-right-radius: 32px;
+}
+.footer-home{
+	margin-top: -60px;
+	display: flex;
+	width: 100%;
+	height: 300px;
+	background: #9B59B6;
+	justify-content: space-around;
+	align-items: center;	
+}
+.footer-home p{
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+.footer-home a{
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+.footer-home-1,.footer-home-2,.footer-home-3{
+	display: flex;
+	width: 30%;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	
+}
+.reg1{
+	background: transparent url(../images/icon1.png) no-repeat center;
+	display: block;
+	height: 50px;
+	width: 50px;	
+}
+.reg2{
+	background: transparent url(../images/icon2.png) no-repeat center;
+	display: block;
+	height: 50px;
+	width: 50px;	
+}
+.reg3{
+	background: transparent url(../images/icon3.png) no-repeat center;
+	display: block;
+	height: 50px;
+	width: 50px;	
+}
+#footer{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;	
+}
+.footer-left{
+	float: left;
+	margin: 50px;
+    color: #9B59B6;
+}
+.footer-left a:hover{
+	color:  #9B59B6;
+}
+.footer-right{
+	display: flex;
+	margin: 50px;
+}
+.footer-right a{
+	margin: 0 5px;
+}
+.a1{
+	background: transparent url(../images/socil.png) no-repeat 4px 1px;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.a2{
+	background: transparent url(../images/socil.png) no-repeat -24px 1px;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.a3{
+	background: transparent url(../images/socil.png) no-repeat -54px 1px;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.a4{
+	background: transparent url(../images/socil.png) no-repeat -84px 1px;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.a1:hover{
+	background: transparent url(../images/socil.png) no-repeat 4px -29px;	
+}
+.a2:hover{
+	background: transparent url(../images/socil.png) no-repeat -24px -29px;	
+}
+.a3:hover{
+	background: transparent url(../images/socil.png) no-repeat -54px -29px;	
+}
+.a4:hover{
+	background: transparent url(../images/socil.png) no-repeat -84px -29px;	
+}
+@media only screen and (max-width:935px ) {
+	.menu-btn{
+		display: block;
+	}
+	#tab{
+		display: none;
+	}
+	.home-content{
+		flex-direction: column;
+	}
+	.home-content-left{
+		width: 100%;
+		justify-content: center;
+		text-align: center;
+	}
+	.home-content-right{
+		margin-top: 40px;
+		width: 100%;
+	}	
+}
+@media only screen and (max-width: 790px) {
+	.footer-home{		
+		height: auto;
+		justify-content: center;
+	}
+    .footer-home-1{
+    	display: none;
+    }
+    #footer{
+    	display: flex;
+    	width: 100%;
+    	flex-direction: column;
+    	justify-content: center;
+    	text-align: center;
+    }
+    .footer-left{
+    	clear: both;
+    	width: 100%;
+    	margin: 20px auto;
+    }
+    .footer-right{
+    	clear: both;
+    	margin: 10px auto;
+    }
+}
+@media only screen and (max-width: 560px) {
+	.nav{
+		width: 100%;
+		flex-direction: column;
+	}
+	.sign{
+		margin-bottom: 20px;
+	}
+	.footer-home{
+		flex-direction:column ;
+	}
+	.footer-home-2,.footer-home-3{
+		width: 90%;
+		margin: 0 auto;
+	}
+}

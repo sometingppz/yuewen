@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/home-style.css" />
+		<title>home</title>
+		<style type="text/css">
+			#tab a{
+	            font-size: 1.1em;
+	            display: flex;	
+	            align-items: center;
+	            padding: 20px 15px;
+            }
+            #tab a:hover{
+				background-color: #9B59B6;
+			}
+		</style>
+		<script>
+			function hover(n)
+            {
+                var $ = function(o)
+                {
+                    return document.getElementById(o);
+                }
+                $('btn' + n).className = 'hover';
+               }
+            function out(n)
+            {
+            	var $ = function(o)
+                {
+                    return document.getElementById(o);
+                }
+                $('btn'+n).className='normal';
+            }
+            
+            function click(){          	
+            	var loginbox=document.getElementById("loginBox");
+                var signupbox=document.getElementById("signupBox");
+                var tri1=document.getElementById("tri1");
+                var tri2=document.getElementById("tri2");
+                loginbox.className='none';
+                signupbox.className='none';
+                tri1.className='none';
+                tri2.className='none';
+            }
+            function click1(){
+            	var loginbox=document.getElementById("loginBox");
+                var signupbox=document.getElementById("signupBox");
+                var tri1=document.getElementById("tri1");
+                var tri2=document.getElementById("tri2");
+            	loginbox.className='show';
+            	signupbox.className='none';
+            	tri1.className='show';
+            	tri2.className='none';
+            }
+            function click2(){
+            	var loginbox=document.getElementById("loginBox");
+                var signupbox=document.getElementById("signupBox");
+                var tri1=document.getElementById("tri1");
+                var tri2=document.getElementById("tri2");
+            	loginbox.className='none';
+            	signupbox.className='show';
+            	tri1.className='none';
+            	tri2.className='show';
+            }
+            
+		</script>
+	</head>
+	<body>
+		<div id="menu-aside" class="none"><!--侧边菜单-->
+            <ul id="tab-aside">
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="details.html">DETAILS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+			</ul>                			
+		</div>
+				
+		<div id="header" onClick="click();">
+			<div id="pictures">
+				<p><img src="images/nav-icon.png" class="menu-btn"/></p>
+				<p><img src="images/logo.jpg"/></p>
+			</div>
+			
+			<div id="menu">
+				<ul id="tab">
+					<li id="ab1" class="hover"><a href="home.html">HOME</a></li>
+					<li id="ab2" class="normal"><a href="details.html">DETAILS</a></li>
+					<li id="ab3" class="normal" ><a href="about.html">ABOUT</a></li>
+					<li id="ab4" class="normal"><a href="blog.html">BLOG</a></li>
+				</ul>
+				<ul id="form">
+				    <li id="btn1" class="normal" onMouseOver="hover(1);" onMouseOut="out(1);" onClick="click1();">LOGIN
+				    	<div class="none" id="tri1"></div>
+                        <div id="loginBox" class="none">                
+				            <form id="loginForm">
+				                <fieldset id="body">
+				                    <fieldset>
+				                        <label for="email">Email Address</label>
+				                        <input type="text" name="email" id="email" />
+				                    </fieldset>
+				                    <fieldset>
+				                        <label for="password">Password</label>
+				                        <input type="password" name="password" id="password" />
+				                    </fieldset>
+				                    <div class="form-btn">
+				                        <label class="remeber" for="checkbox"><input type="checkbox" id="checkbox" />Remember me</label>
+				                        <input type="submit" id="login" value="LOGIN" />
+				                    </div>    
+				                </fieldset>
+				                <div class="body-s"><a href="#" class="body-a">Forgot your password?</a></div>
+				            </form>
+				        </div>
+				    </li>
+				    <li id="btn2" class="normal" onMouseOver="hover(2);" onMouseOut="out(2);" onClick="click2();">SINGUP
+				    	<div class="none" id="tri2"> </div>
+				    	<div id="signupBox" class="none">                
+				            <form id="signupForm">
+				                <fieldset id="signupbody" >
+				                    <fieldset>
+				                        <label for="email">Email Address <span>*</span></label>
+				                        <input type="text" name="email" id="signupemail" />
+				                    </fieldset>
+				                    <fieldset>
+				                        <label for="password">Choose Password <span>*</span></label>
+				                        <input type="password" name="password" id="signuppassword" />
+				                    </fieldset>
+				                    <fieldset>
+				                        <label for="password">Confirm Password <span>*</span></label>
+				                        <input type="password" name="password" id="signuppassword1" />
+				                    </fieldset>
+				                    <div class="now">
+				                    	<input type="submit" id="signup" value="REGISTER NOW!" />
+				                    </div>				                        
+				                </fieldset>
+				            </form>
+				       </div>
+				    </li>
+			    </ul>
+			</div>										
+		</div>
+		
+		<div id="home"><!--初始界面 -->
+				<div class="home-content">
+					<div class="home-content-left">
+					<h1>money and the power</h1>
+					<p>Slide is mobile payment solution to easily send money to 
+						frieds.Lorem ipsum dolor sit amet, consectetur elit, sed 
+						do eiusmod tempor incididunt ut labore et dolore magna 
+						aliqua.</p>				
+					<div class="nav">
+						<a href="#" class="sign">sign up</a>
+						<a href="#" class="learn">learn more > </a>
+					</div>
+					</div>
+					
+					<div class="home-content-right">
+						<img src="images/mobile.jpg"/>
+					</div>
+				</div>
+		</div>		
+				<div class="footer-home">
+						<div class="footer-home-1">
+							<p><a class="reg1" href="#"></a></p>
+							<p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a></p>
+							<p>Lorem ipsum dolor sit amet, consctetur adipisic
+									ing elit, sed do eiusmod.</p>								
+							
+						</div>
+						
+						<div class="footer-home-2">
+							    <p><a class="reg2" href="#"></a></p>
+								<p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a></p>
+								<p>Lorem ipsum dolor sit amet, consctetur adipisic
+									ing elit, sed do eiusmod.</p>								
+						</div>
+						
+						<div class="footer-home-3">
+							    <p><a class="reg3" href="#"></a></p>
+								<p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a></p>
+								<p>Lorem ipsum dolor sit amet, consctetur adipisic
+									ing elit, sed do eiusmod.</p>								
+						</div>
+				</div>
+				
+			</div>
+			
+		<div id="footer">
+			<div class="footer-left">
+				 <p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="#">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+			</div>
+			<div class="footer-right">
+				<a href="#" class="a1"></a>
+				<a href="#" class="a2"></a>
+				<a href="#" class="a3"></a>
+				<a href="#" class="a4"></a>
+			</div>						
+		</div>		
+	</body>
+</html>

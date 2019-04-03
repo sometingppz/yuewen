@@ -1,0 +1,503 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	font-family: trebuchet ms, arial, sans-serif;;
+	background: black;
+	color: #fff;
+}
+ul{
+	list-style-type: none;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+.none{
+	display: none;
+}
+.show{
+	display: block;
+}
+.normal{
+	background: #000000;
+}
+.hover{
+	background: #9B59B6;
+}
+#header{
+	margin: 0 auto;	
+	width: 80%;
+}
+
+#header{
+	display: flex;
+	height: 130px;
+}
+#pictures{
+	display: flex;
+	flex-grow: 3;
+}
+.menu-btn{
+	padding: 15px 20px 15px 0;
+	display: none;
+}
+#menu{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+}
+#tab{
+	display: flex;
+}
+
+#form{
+	display: flex;
+	justify-content: flex-end;
+}
+#form li{
+	padding: 20px 15px;	
+    text-transform: uppercase;
+	cursor: pointer;	
+}
+
+/*---登录start---*/
+#tri1{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+     border-bottom: 20px solid #9B59B6 ; 
+}
+#tri2{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+     border-bottom: 20px solid #9B59B6 ; 
+}
+#loginForm{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: -220px;
+	background-color: #FFFFFF;
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+}
+#body{
+	border-style: none;
+	color: #6C6C6C;	
+	margin: 20px;
+	height: auto;
+	width: auto;
+}
+#body fieldset{
+	border-style: none;
+	margin-bottom: 10px;
+	height: auto;
+	width: auto;
+}
+#body label{
+	margin-bottom: 20px;
+}
+#email,#password{
+	width: 100%;
+	height: 39px;
+	margin-top: 10px;
+	border: #BBBBBB solid 0.5px;
+}
+.form-btn{
+	display: flex;
+	flex-direction:column ;
+}
+.remeber{
+	text-transform: none;
+	width: 100%;
+	padding-top: 5px;
+	font-size: 16px;
+}
+#checkbox{
+	margin-right: 10px;
+	
+}
+#login{
+	border: #9B59B6 solid 1px;
+	background-color: #9B59B6;
+	padding: 10px 30px;
+	color: #FFFFFF;
+	font-size: 1.1em;
+	border-radius: 5px;
+	margin-top: -5px;
+}
+.body-s{
+    padding: 0;
+    width: auto;
+    height: auto;
+    margin-top: -13px;
+    padding-left: 16px;
+
+}
+.body-a{
+	padding: 0;
+	margin: 0;
+	color: #6C6C6C;
+	text-transform: none;
+} 
+#signupForm{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: -220px;
+	background-color: #FFFFFF;
+	width: 300px;
+	height: 320px;
+	border-radius: 5px;
+}
+#signupbody{
+	border-style: none;
+	color: #6C6C6C;	
+	margin: 20px;
+	height: auto;
+	width: auto;
+}
+#signupbody fieldset{
+	border-style: none;
+	margin-bottom: 10px;
+	height: auto;
+	width: auto;
+}
+#signupbody label{
+	margin-bottom: 20px;
+}
+#signupemail,#signuppassword,#signuppassword1{
+	width: 100%;
+	height: 39px;
+	margin-top: 10px;
+	border: #BBBBBB solid 0.5px;
+}
+.now{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#signup{
+	border: #9B59B6 solid 1px;
+	background-color: #9B59B6;
+	padding: 10px 75px;
+	color: #FFFFFF;
+	border-radius: 2px;
+	cursor: pointer;
+}
+/*---登录end---*/
+
+.title{
+	width: 100%;
+	text-align: center;
+	font-size: 3em;
+	margin: 25px auto;
+}
+.wel{
+	width: 100%;
+	height: auto;
+	padding: 20px 0;
+	background: #9B59B6;
+	font-size: 2.5em;
+	text-align: center;
+}
+#about{
+	width: 100%;
+	height: auto;
+	color: #000000;
+	background: #FFFFFF;
+}
+.about-top{
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
+.top-left{
+	width: 50%;
+}
+.top-right{
+	width: 43%;
+}
+.h{
+	font-size: 2.5em;
+	margin: 15px 0;
+}
+.top-left-img img{
+	width: 100%;
+}
+.top-right{
+	
+}
+.top-right p{
+	margin-top: -15px;
+}
+.strip{
+	width: 100%;
+	margin-top: 10px;
+}
+.text{
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #6C6C6C;
+	margin-top: 20px;
+}
+.container
+{
+	border: #ebebeb solid 1px;
+	background-color:  #ebebeb;
+    height: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+.warning {
+    height: 10px;
+    width: 100%;
+}
+.warning {
+	
+	position: relative;
+	background-color: #FF8EFF;
+	border-radius: 10px;
+	background-size: 3em 3em;
+	background-image: linear-gradient(-45deg, transparent 0em, transparent 0.8em, #E800E8 0.9em, #E800E8 2.1em, transparent 2.1em, transparent 2.9em, #E800E8 3.1em);
+	-webkit-animation: warning-animation 750ms infinite linear;
+	-moz-animation: warning-animation 750ms infinite linear;
+	animation: warning-animation 750ms infinite linear;
+}
+.asd1{
+	width: 75%;
+}
+.asd2{
+	width: 90%;
+}
+.asd3{
+	width: 50%;
+}
+.asd4{
+	width: 60%;
+}
+@-webkit-keyframes warning-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 3em 0;
+  }
+}
+@-moz-keyframes warning-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 3em 0;
+  }
+}
+@keyframes warning-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 3em 0;
+  }
+}
+
+
+
+
+
+
+.about-mid{
+	width: 100%;
+	text-align: center;
+	margin: 60px 0 30px 0;
+	font-size: 2.0em;
+	font-weight: 300;
+}
+.about-buttom{
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 60px;
+}
+.about-buttom a{
+	border: blue solid 1px;
+	display: block;
+	height: 220px;
+	width: 220px;
+	border-radius: 50%;
+	
+}
+.about-buttom span{
+	display: block;
+	height: 220px;
+	width: 220px;
+	border-radius: 50%;
+		
+}
+.about-buttom img{
+	border-radius: 50%;
+	
+}
+.about-buttom a:hover{
+	background-color: #9B59B6;
+}
+.about-buttom a:hover img{
+	opacity: 0.3;
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.about-buttom p.name{
+	color: #9B59B6;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.about-buttom h4{
+	margin-top: 20px;
+}
+.about-buttom p.intro{
+	margin-top: 20px;
+	width: 80%;
+	line-height: 25px;
+}
+.buttom-1,.buttom-2,.buttom-3{
+	
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 31%;
+}
+#footer{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;	
+}
+.footer-left{
+	float: left;
+	margin: 50px;
+    color: #9B59B6;
+}
+.footer-left a:hover{
+	color:  #9B59B6;
+}
+.footer-right{
+	display: flex;
+	margin: 50px;
+}
+.footer-right a{
+	margin: 0 5px;
+}
+.a1{
+	background: transparent url(../images/socil.png) no-repeat 4px 1px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	
+}
+.a2{
+	background: transparent url(../images/socil.png) no-repeat -24px 1px;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.a3{
+	background: transparent url(../images/socil.png) no-repeat -54px 1px;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.a4{
+	background: transparent url(../images/socil.png) no-repeat -84px 1px;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.a1:hover{
+	background:  url(../images/socil.png) no-repeat 4px -29px;
+		
+}
+.a2:hover{
+	background: transparent url(../images/socil.png) no-repeat -24px -29px;	
+}
+.a3:hover{
+	background: transparent url(../images/socil.png) no-repeat -54px -29px;	
+}
+.a4:hover{
+	background: transparent url(../images/socil.png) no-repeat -84px -29px;	
+}
+@media only screen and (max-width:935px ) {
+	.menu-btn{
+		display: block;
+	}
+	#tab{
+		display: none;
+	}
+	.buttom-2{
+		display: none;
+	}
+}
+@media only screen and (max-width: 790px){
+	#footer{
+    	display: flex;
+    	width: 100%;
+    	flex-direction: column;
+    	justify-content: center;
+    	text-align: center;
+    }
+    .footer-left{
+    	clear: both;
+    	width: 100%;
+    	margin: 20px auto;
+    }
+    .footer-right{
+    	clear: both;
+    	margin: 10px auto;
+    }
+}
+@media only screen and (max-width: 560px){
+	.about-top{
+		width: 100%;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.wel{
+		font-size: 1.4em;
+	}
+	.top-left,.top-right{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.h{
+		font-size: 1.5em;
+	}
+	.about-buttom{
+		flex-direction: column;
+	}
+	.buttom-1,.buttom-3{
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	.buttom-3{
+		margin-top: 20px;
+	}
+}

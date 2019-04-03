@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>home</title>
+		<link rel="stylesheet" href="css/blog-style.css" />
+		<style type="text/css">
+			#tab a{
+	            font-size: 1.1em;
+	            display: flex;	
+	            align-items: center;
+	            padding: 20px 15px;
+            }
+            #tab a:hover{
+				background-color: #9B59B6;
+			}						
+		</style>
+		<script>
+			function hover(n)
+            {
+                var $ = function(o)
+                {
+                    return document.getElementById(o);
+                }
+                $('btn' + n).className = 'hover';
+               }
+            function out(n)
+            {
+            	var $ = function(o)
+                {
+                    return document.getElementById(o);
+                }
+                $('btn'+n).className='normal';
+            }
+            
+            function click(){          	
+            	var loginbox=document.getElementById("loginBox");
+                var signupbox=document.getElementById("signupBox");
+                var tri1=document.getElementById("tri1");
+                var tri2=document.getElementById("tri2");
+                loginbox.className='none';
+                signupbox.className='none';
+                tri1.className='none';
+                tri2.className='none';
+            }
+            function click1(){
+            	var loginbox=document.getElementById("loginBox");
+                var signupbox=document.getElementById("signupBox");
+                var tri1=document.getElementById("tri1");
+                var tri2=document.getElementById("tri2");
+            	loginbox.className='show';
+            	signupbox.className='none';
+            	tri1.className='show';
+            	tri2.className='none';
+            }
+            function click2(){
+            	var loginbox=document.getElementById("loginBox");
+                var signupbox=document.getElementById("signupBox");
+                var tri1=document.getElementById("tri1");
+                var tri2=document.getElementById("tri2");
+            	loginbox.className='none';
+            	signupbox.className='show';
+            	tri1.className='none';
+            	tri2.className='show';
+            }
+            
+		</script>
+	</head>
+	<body>
+		<div id="menu-aside" class="none"><!--侧边菜单-->
+            <ul id="tab-aside">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">DETAILS</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">BLOG</a></li>
+			</ul>                			
+		</div>
+				
+		<div id="header" onClick="click();">
+			<div id="pictures">
+				<p><img src="images/nav-icon.png" class="menu-btn"/></p>
+				<p><img src="images/logo.jpg"/></p>
+			</div>
+			
+			<div id="menu">
+				<ul id="tab">
+					<li id="ab1" class="normal"><a href="home.html">HOME</a></li>
+					<li id="ab2" class="normal"><a href="details.html">DETAILS</a></li>
+					<li id="ab3" class="normal" ><a href="about.html">ABOUT</a></li>
+					<li id="ab4" class="hover"><a href="blog.html">BLOG</a></li>
+				</ul>
+				<ul id="form">
+				    <li id="btn1" class="normal" onMouseOver="hover(1);" onMouseOut="out(1);" onClick="click1();">LOGIN
+				    	<div class="none" id="tri1"></div>
+                        <div id="loginBox" class="none">                
+				            <form id="loginForm">
+				                <fieldset id="body">
+				                    <fieldset>
+				                        <label for="email">Email Address</label>
+				                        <input type="text" name="email" id="email" />
+				                    </fieldset>
+				                    <fieldset>
+				                        <label for="password">Password</label>
+				                        <input type="password" name="password" id="password" />
+				                    </fieldset>
+				                    <div class="form-btn">
+				                        <label class="remeber" for="checkbox"><input type="checkbox" id="checkbox" />Remember me</label>
+				                        <input type="submit" id="login" value="LOGIN" />
+				                    </div>    
+				                </fieldset>
+				                <div class="body-s"><a href="#" class="body-a">Forgot your password?</a></div>
+				            </form>
+				        </div>
+				    </li>
+				    <li id="btn2" class="normal" onMouseOver="hover(2);" onMouseOut="out(2);" onClick="click2();">SINGUP
+				    	<div class="none" id="tri2"> </div>
+				    	<div id="signupBox" class="none">                
+				            <form id="signupForm">
+				                <fieldset id="signupbody" >
+				                    <fieldset>
+				                        <label for="email">Email Address <span>*</span></label>
+				                        <input type="text" name="email" id="signupemail" />
+				                    </fieldset>
+				                    <fieldset>
+				                        <label for="password">Choose Password <span>*</span></label>
+				                        <input type="password" name="password" id="signuppassword" />
+				                    </fieldset>
+				                    <fieldset>
+				                        <label for="password">Confirm Password <span>*</span></label>
+				                        <input type="password" name="password" id="signuppassword1" />
+				                    </fieldset>
+				                    <div class="now">
+				                    	<input type="submit" id="signup" value="REGISTER NOW!" />
+				                    </div>				                        
+				                </fieldset>
+				            </form>
+				       </div>
+				    </li>
+			    </ul>
+			</div>										
+		</div>
+		
+		<div class="title"><p><span>Blog</span></p></div>
+		<div class="wel">Welcome to Our Website</div>
+		<div id="blog">
+			<div class="content">
+				<div class="content-left">
+					<div class="content-left-1"><a href="#">Lorem Ipsum is simply dummy text</a></div>
+					<div class="content-left-2"><img  src="images/blog-img1.jpg"/></div>
+					<div class="content-left-3">
+						<div class="c-left">
+							<p>Posted on<br />January 20, 2014</p>
+                            <p>Tags<br/><a href="#">Website</a> | <a href="#">Desigin</a></p>
+                            <p>Comments<br /><a href="#">8</a></p>
+						</div>
+						<div class="c-right">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+							<p>There are many variations of passages of Lorem Ipsum available, but the major
+								ity have suffered alteration in some form.</p>
+						</div>
+					</div>
+					
+					<div class="content-left-1"><a href="#">Lorem Ipsum is simply dummy text</a></div>
+					<div class="content-left-2"><img src="images/blog-img2.png"/></div>
+					<div class="content-left-3">
+						<div class="c-left">
+							<p>Posted on<br />January 20, 2014</p>
+                            <p>Tags<br/><a href="#">Website</a> | <a href="#">Desigin</a></p>
+                            <p>Comments<br /><a href="#">8</a></p>
+						</div>
+						<div class="c-right">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+							<p>There are many variations of passages of Lorem Ipsum available, but the major
+								ity have suffered alteration in some form.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="content-right">
+					<form class="form-1">
+						<input type="text" class="form-1-t" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"/>
+						<input type="submit" class="form-1-s" value="" />
+					</form>
+					<h3>Follow Us</h3>
+					<div class="menu1">
+						<a href="#" class="menu1-1"></a>
+						<a href="#" class="menu1-2"></a>
+						<a href="#" class="menu1-3"></a>
+					</div>
+					<form class="form-2">
+						<input type="text" class="form-2-t" value="Enter Your e-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your e-mail';}"/>
+						<input type="submit" class="form-2-s" value="Subscribe"/>
+					</form>
+					<h3>Categories</h3>
+					<ul class="menu2">
+						<li ><a href="#">Lorem Ipsum is simply dummy </a></li> 
+						<li ><a href="#">Lorem Ipsum is simply dummy </a></li> 
+						<li ><a href="#">Lorem Ipsum is simply dummy </a></li> 
+					</ul>
+					<h3>Recent Post</h3>
+					<ul class="menu3">
+						<li class="move"><a href="#">Lorem Ipsum is simply dummy</a></li> 
+						<li><a href="#">Lorem Ipsum is simply dummy</a></li> 
+						<li><a href="#">Lorem Ipsum is simply dummy</a></li> 
+					</n>
+					<h3>Tags</h3>
+					<ul class="nav-menu">
+						<li><a href="#">design</a> </li> 
+						<li><a href="#">develpment</a></li>
+						<li><a href="#">multipurpose</a></li> 
+						<li><a href="#">creative</a></li>
+						<li><a href="#">seo</a></li>
+						<li><a href="#">adverticement</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div class="footer-left">
+				 <p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="#">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+			</div>
+			<div class="footer-right">
+				<a href="#" class="a1"></a>
+				<a href="#" class="a2"></a>
+				<a href="#" class="a3"></a>
+				<a href="#" class="a4"></a>
+			</div>						
+		</div>
+	</body>
+</html>

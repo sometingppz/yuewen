@@ -1,0 +1,501 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	font-family: trebuchet ms, arial, sans-serif;;
+	background: black;
+	color: #fff;
+}
+ul{
+	list-style-type: none;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+.none{
+	display: none;
+}
+.show{
+	display: block;
+}
+.normal{
+	background: #000000;
+}
+.hover{
+	background: #9B59B6;
+}
+#header{
+	margin: 0 auto;	
+	width: 80%;
+}
+
+#header{
+	display: flex;
+	height: 130px;
+}
+#pictures{
+	display: flex;
+	flex-grow: 3;
+}
+.menu-btn{
+	padding: 15px 20px 15px 0;
+	display: none;
+}
+#menu{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+}
+#tab{
+	display: flex;
+}
+
+#form{
+	display: flex;
+	justify-content: flex-end;
+}
+#form li{
+	padding: 20px 15px;	
+    text-transform: uppercase;
+	cursor: pointer;	
+}
+/*---登录start---*/
+#tri1{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+     border-bottom: 20px solid #9B59B6 ; 
+}
+#tri2{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+     border-bottom: 20px solid #9B59B6 ; 
+}
+#loginForm{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: -220px;
+	background-color: #FFFFFF;
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+}
+#body{
+	border-style: none;
+	color: #6C6C6C;	
+	margin: 20px;
+	height: auto;
+	width: auto;
+}
+#body fieldset{
+	border-style: none;
+	margin-bottom: 10px;
+	height: auto;
+	width: auto;
+}
+#body label{
+	margin-bottom: 20px;
+}
+#email,#password{
+	width: 100%;
+	height: 39px;
+	margin-top: 10px;
+	border: #BBBBBB solid 0.5px;
+}
+.form-btn{
+	display: flex;
+	flex-direction:column ;
+}
+.remeber{
+	text-transform: none;
+	width: 100%;
+	padding-top: 5px;
+	font-size: 16px;
+}
+#checkbox{
+	margin-right: 10px;
+	
+}
+#login{
+	border: #9B59B6 solid 1px;
+	background-color: #9B59B6;
+	padding: 10px 30px;
+	color: #FFFFFF;
+	font-size: 1.1em;
+	border-radius: 5px;
+	margin-top: -5px;
+}
+.body-s{
+    padding: 0;
+    width: auto;
+    height: auto;
+    margin-top: -13px;
+    padding-left: 16px;
+
+}
+.body-a{
+	padding: 0;
+	margin: 0;
+	color: #6C6C6C;
+	text-transform: none;
+} 
+#signupForm{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: -220px;
+	background-color: #FFFFFF;
+	width: 300px;
+	height: 320px;
+	border-radius: 5px;
+}
+#signupbody{
+	border-style: none;
+	color: #6C6C6C;	
+	margin: 20px;
+	height: auto;
+	width: auto;
+}
+#signupbody fieldset{
+	border-style: none;
+	margin-bottom: 10px;
+	height: auto;
+	width: auto;
+}
+#signupbody label{
+	margin-bottom: 20px;
+}
+#signupemail,#signuppassword,#signuppassword1{
+	width: 100%;
+	height: 39px;
+	margin-top: 10px;
+	border: #BBBBBB solid 0.5px;
+}
+.now{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#signup{
+	border: #9B59B6 solid 1px;
+	background-color: #9B59B6;
+	padding: 10px 75px;
+	color: #FFFFFF;
+	border-radius: 2px;
+	cursor: pointer;
+}
+/*---登录end---*/
+
+.title{
+	width: 100%;
+	text-align: center;
+	font-size: 3em;
+	margin: 25px auto;
+}
+.wel{
+	width: 100%;
+	height: auto;
+	padding: 20px 0;
+	background: #9B59B6;
+	font-size: 2.5em;
+	text-align: center;
+}
+#blog{
+	width: 100%;
+	height: auto;
+	color: #000000;
+	background: #FFFFFF;
+	padding-top: 40px;
+}
+.content{
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: 0 auto;
+}
+.content img{
+	width: 100%;
+}
+.content a{
+	color: #9B59B6;
+}
+.content-left{
+	width: 60%;
+}
+.content-left-1{
+	font-size: 1.5em;
+}
+.content-left-2{
+	margin-top: 30px;
+}
+.content-left-3{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.content-left-3 p{
+	line-height: 22px;
+	margin-bottom: 15px;
+}
+.c-left{
+	width: 25%;
+	height: auto;
+}
+.c-right{
+	width: 70%;
+	height: auto;
+}
+.content-right{
+	width: 28%;
+}
+.content-right nav{
+	display: flex;
+	flex-direction: column;
+	
+}
+.content-right a{
+	color: #6C6C6C;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.form-1{
+	display: flex;
+}
+.form-1-t{
+	color: #BBBBBB;
+	width: 80%;
+	height: 39px;
+	border: #BBBBBB solid 0.5px;
+	border-right-style: none;
+}
+.form-1-s{
+	background: transparent url(../images/search.png) no-repeat center;	
+	width: 20%;
+	height: 40px;
+	border: #BBBBBB solid 0.5px;
+	border-left-style: none;
+	cursor: pointer;
+}
+.content-right h3{
+	font-size: 2em;
+	margin: 30px 0;
+	font-weight: 400;
+}
+.form-2-t{
+	color: #BBBBBB;
+	width: 100%;
+	height: 39px;
+	border: #BBBBBB solid 0.5px;
+}
+.form-2-s{
+	color: #FFFFFF;
+	background-color: #9B59B6;
+	border: #9B59B6 solid 1px;
+	padding: 12px 55px;
+	font-size: 1.2em;
+	border-radius: 5px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.menu1{
+	width: 170px;
+	display: flex;
+	justify-content: space-between;
+}
+.menu1-1{
+	background: transparent url(../images/spriteimg.png) no-repeat -8px -54px;
+	display: block;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+}
+.menu1-2{
+	background: transparent url(../images/spriteimg.png) no-repeat -108px -54px;
+	display: block;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+}
+.menu1-3{
+	background: transparent url(../images/spriteimg.png) no-repeat -59px -54px;
+	display: block;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+}
+.menu2{
+	width: 100%;
+}
+.menu2 li{
+	width: 100%;	
+	display: block;
+
+}
+.menu2 a{
+	background: url(../images/icon_1.png) no-repeat 1px 12px;
+	width: auto;
+	padding: 10px 20px 10px 20px;
+	line-height: 40px;
+} 
+.menu2 a:hover{
+	background-color: #6C6C6C;
+	border: #6C6C6C solid 1px;
+	border-radius: 2px;
+	color: #FFFFFF;
+	margin-left: 15px
+}
+
+.menu3{
+	width: 100%;
+}
+.menu3 li{
+	width: 90%;
+	margin: 8px 0;
+	padding: 10px 0;
+}
+.menu3 a{
+	width: 100%;
+}
+.menu3 a:hover{
+	color:  #9B59B6;
+}
+.nav-menu{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.nav-menu li{
+	width: auto;
+	margin: 8px 20px 8px 0;
+
+}
+.nav-menu a{
+	padding: 10px;
+	background-color: #F6FAFB;
+	
+}
+#footer{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;	
+}
+.footer-left{
+	float: left;
+	margin: 50px;
+    color: #9B59B6;
+}
+.footer-left a:hover{
+	color:  #9B59B6;
+}
+.footer-right{
+	display: flex;
+	margin: 50px;
+}
+.footer-right a{
+	margin: 0 5px;
+}
+.a1{
+	background: transparent url(../images/socil.png) no-repeat 4px 1px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	
+}
+.a2{
+	background: transparent url(../images/socil.png) no-repeat -24px 1px;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.a3{
+	background: transparent url(../images/socil.png) no-repeat -54px 1px;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.a4{
+	background: transparent url(../images/socil.png) no-repeat -84px 1px;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.a1:hover{
+	background:  url(../images/socil.png) no-repeat 4px -29px;
+		
+}
+.a2:hover{
+	background: transparent url(../images/socil.png) no-repeat -24px -29px;	
+}
+.a3:hover{
+	background: transparent url(../images/socil.png) no-repeat -54px -29px;	
+}
+.a4:hover{
+	background: transparent url(../images/socil.png) no-repeat -84px -29px;	
+}
+@media only screen and (max-width:935px ) {
+	.menu-btn{
+		display: block;
+	}
+	#tab{
+		display: none;
+	}
+}
+@media only screen and (max-width: 790px){
+	#footer{
+    	display: flex;
+    	width: 100%;
+    	flex-direction: column;
+    	justify-content: center;
+    	text-align: center;
+    }
+    .footer-left{
+    	clear: both;
+    	width: 100%;
+    	margin: 20px auto;
+    }
+    .footer-right{
+    	clear: both;
+    	margin: 10px auto;
+    }
+    .form-2-s{
+    	font-size: 1.1em;
+    	padding: 8px 25px;
+    }
+}
+@media only screen and (max-width: 560px){
+	.content{
+		flex-direction: column;
+	}
+	.content-left{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.content-right{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.content-left-3{
+		display: flex;
+		flex-direction: column;
+	}
+	.c-right{
+		width: 100%;
+	}
+	.wel{
+		font-size: 1.4em;
+	}
+}
